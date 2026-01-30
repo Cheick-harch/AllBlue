@@ -1,11 +1,11 @@
-$("a, button").on("click", function(e) {
-    e.preventDefault();
+$("a").on("click", function (e) {
+  e.preventDefault();
 });
 
-$(".bi-list").on("click", function(e){
-    $(".sidebar").toggleClass("showSideBar");
+$(".bi-list").on("click", function () {
+  $(".sideBar").addClass("showSideBar");
 });
 
-$(".close").on("click", function(e){
-    $(".sidebar").removeClass("showSideBar");
+$(".bi-x-lg").on("click", function () {
+  $(".sideBar").removeClass("showSideBar");
 });
